@@ -24,15 +24,15 @@ import com.example.imagen.ui.theme.ImagenTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            ImagenTheme  {
-                Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
-                    App(modifier = Modifier.padding(padding))
+            enableEdgeToEdge()
+            setContent {
+                ImagenTheme  {
+                    Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
+                        App(modifier = Modifier.padding(padding))
+                    }
                 }
             }
         }
-    }
 }
 
 @Composable
